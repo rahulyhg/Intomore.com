@@ -1,0 +1,16 @@
+.A_M_Banner_Wrapper {
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.60);
+  @media (min-width: 767px) {
+    display: none;
+  }
+  #A_M_Banner {
+    width: 320px;
+    margin: 0 auto;
+  }
+}

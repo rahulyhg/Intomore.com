@@ -1,0 +1,245 @@
+.footer-wrapper {
+  //colors
+  $color_star_dust_approx: #9b9b9b;
+  $black: #000;
+  $white: #fff;
+  $color_gray_approx: #7e7e7e;
+  //urls
+  $url_1: url('../../../assets/imgs/facebook_black.svg');
+  $url_2: url('../../../assets/imgs/twitter_black.svg');
+  $url_3: url('../../../assets/imgs/instagram.svg');
+
+  .row {
+    margin: 0;
+  }
+
+  #footer {
+    position: relative;
+    background: $black;
+    margin-top: 140px;
+    padding: 100px 0;
+    color: $white;
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+    }
+    
+    .grindr-footer-form {
+      max-width: 300px;
+      margin-top: 20px;
+    }
+
+    .footer-sub-text {
+      font-size: 12px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-top: 30px;
+      color: $white;
+      font-weight: 600;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .grindr-footer-links {
+      margin-top: 20px;
+    }
+
+    .grindr-footer-blurb {
+      font-size: 15px;
+    }
+
+    .into-copyright {
+      font-size: 11px;
+    }
+
+    .grindr-footer-blurb-mobile {
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      color: $color_star_dust_approx;
+      display: none;
+    }
+
+    .mobile-social-links {
+      display: none;
+      margin-bottom: 40px;
+      margin-top: 30px;
+
+      a {
+        width: 35px;
+        height: 35px;
+      }
+    }
+
+    .pc-social-links {
+      margin-top: 40px;
+    }
+
+    .into-socialbox-links {
+      overflow: hidden;
+      padding: 0 10px;
+
+      li {
+        display: inline-block;
+
+        .social-svg {
+          margin-right: 27px;
+          display: inline-block;
+          width: 27px;
+          height: 27px;
+        }
+
+        .social-svg:hover {
+          filter: opacity(55%) invert(100%);
+        }
+
+        .facebook-svg {
+          background: $url_1 no-repeat center;
+        }
+
+        .twitter-svg {
+          background: $url_2 no-repeat center;
+        }
+
+        .instagram-svg {
+          background: $url_3 no-repeat center;
+        }
+      }
+    }
+
+    .other-links li {
+      display: inline-block;
+      padding: 0 10px;
+      font-size: 9px;
+      letter-spacing: 0.4px;
+      border-right: solid 1px $color_gray_approx;
+
+      a {
+        color: $color_gray_approx;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      &:last-child {
+        border: none;
+      }
+    }
+
+    .footer-logo img {
+      height: 87px;
+    }
+  }
+
+  .footer-nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $color_star_dust_approx;
+    font-size: 18px;
+    padding-bottom: 13px;
+    margin-bottom: 15px;
+
+    a {
+      color: $white;
+      display: block;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-family: Arial, Helvetica, sans-serif;
+      
+    }
+  }
+
+  .footer-bottom {
+    color: $color_star_dust_approx;
+  }
+
+  .social-svg-inverted {
+    filter: invert(100%);
+
+    &:hover {
+      filter: invert(100%) opacity(55%);
+    }
+  }
+  .footer-bottom-row .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  @media(max-width:991px) {
+    #footer {
+      padding: 40px 15px;
+
+      .footer-logo {
+        margin-bottom: 20px;
+      }
+
+      .pc-social-links {
+        display: none;
+      }
+
+      .subscription-form {
+        width: 100%;
+
+        button {
+          height: 33px;
+        }
+      }
+
+      .grindr-footer-form {
+        max-width: none;
+      }
+
+      .grindr-footer-blurb-mobile {
+        display: inline-block;
+      }
+
+      .mobile-social-links {
+        display: block;
+
+        .other-links {
+          margin-top: 20px;
+
+          li {
+            border: none;
+          }
+        }
+      }
+    }
+
+    .footer-nav {
+      display: block;
+      overflow: hidden;
+      border: none;
+      padding: 0;
+
+      li a {
+        display: block;
+        padding: 20px 0;
+        border-bottom: 1px solid $color_star_dust_approx;
+      }
+    }
+
+    .footer-into-form {
+      max-width: 468px;
+    }
+
+    .footer-bottom {
+      display: none;
+    }
+  }
+
+}
+body.form-submitted {
+  #footer {
+    .subscription-form {
+      p {
+        display: block;
+        margin: 29px 0 0 0;
+        font-weight: bold;
+        font-size: 14px;
+      }
+      form {
+        display: none;
+      }
+    }  
+  }  
+}

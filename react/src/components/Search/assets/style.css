@@ -1,0 +1,14 @@
+.nav-into-search-popover ul {
+  margin: 0; }
+
+.search-section {
+  position: relative; }
+  .search-section .search-close {
+    position: absolute;
+    right: 10px;
+    top: 4px; }
+    @media (min-width: 992px) {
+      .search-section .search-close.nav-search {
+        display: none; } }
+    .search-section .search-close img {
+      width: 18px; }

@@ -1,0 +1,20 @@
+.nav-into-search-popover ul{
+  margin:0;
+}
+
+.search-section{
+  position:relative;
+  .search-close{
+    @media(min-width:992px){
+     &.nav-search{
+       display:none;
+     }
+    }
+    position:absolute;
+    right: 10px;
+    top:4px;
+    img{
+      width:18px;
+    }
+  }
+}

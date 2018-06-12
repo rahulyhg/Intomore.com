@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'Graphik Regular';
+  src: url("https://d3nbjfyscfbvsc.cloudfront.net/fonts/Into/Graphik/Graphik-Regular.ttf"); }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+html, html body {
+  height: 100%;
+  text-size-adjust: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; }
+  html body {
+    background: #f7f7f7;
+    background-size: cover;
+    font-family: 'Graphik Regular',Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000; }
+    html body a, html body a:active, html body a:hover {
+      color: #333;
+      cursor: pointer;
+      text-decoration: none; }
+    html body iframe {
+      border: 0; }
+    html body h1,
+    html body h2,
+    html body h3,
+    html body h4,
+    html body h5,
+    html body h6 {
+      padding: 0;
+      margin: 0; }
+    html body .text-center {
+      text-align: center; }
+    html body .text-uppercase {
+      text-transform: uppercase; }
+    html body .whiteback {
+      background: #fff;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+    @media (max-width: 991px) {
+      html body .whiteback {
+        background: none; } }
+  @media (min-width: 992px) {
+    html .into-container {
+      width: 975px;
+      margin: 0 auto; } }

@@ -1,0 +1,172 @@
+ul,li ,ol{
+  list-style:none;
+}
+ul,ol{padding:0;}
+
+#advertise .article-content {
+  font-family: "Roboto", sans-serif;
+  color: #212529;
+}
+
+.into-container-article {
+  margin: 30px auto 0;
+  max-width: 1200px;
+  padding: 0 15px;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .into-container-article {
+    margin-top: 10px;
+  }
+}
+.into-container-article .article-share-buttons {
+  position: sticky;
+  top: 15px;
+  left: 0;
+  height: 110px;
+  width: 100px;
+  padding-left: 10px;
+}
+@media (min-width: 1024px) {
+  .into-container-article .article-share-buttons {
+    margin-left: -40px;
+  }
+}
+.into-container-article .article-share-buttons.mobile-block {
+  display: none;
+}
+@media (max-width: 767px) {
+  .into-container-article .article-share-buttons {
+    height: 36px;
+    margin-bottom: 20px;
+    position: relative;
+    margin-left: 0;
+    width: 100%;
+    text-align: right;
+  }
+  .into-container-article .article-share-buttons .artice-mobile-container {
+    display: inline-block;
+    width: 120px;
+    height: 35px;
+    background: #fff;
+  }
+  .into-container-article .article-share-buttons.pc-block {
+    display: none;
+  }
+  .into-container-article .article-share-buttons.mobile-block {
+    display: block;
+  }
+  .into-container-article .article-share-buttons:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 17px;
+    width: 100%;
+    height: 1px;
+    background: #9b9b9b;
+  }
+}
+.into-container-article .article-share-buttons a {
+  display: block;
+  margin-bottom: 20px;
+  width: 35px;
+  height: 35px;
+}
+@media (max-width: 767px) {
+  .into-container-article .article-share-buttons a {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  .into-container-article .article-share-buttons a:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .into-container-article {
+    padding-left: 50px;
+    width: 1024px;
+    margin: 30px auto 0;
+  }
+  .into-container-article .article-banner {
+    padding: 0 30px;
+    margin-top: -110px;
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .into-container-article .article-banner {
+    max-width: 578px;
+    margin: -110px auto 0;
+  }
+}
+
+
+#privacy .privacy-content {
+  margin-top: -110px;
+  padding: 0 30px;
+}
+@media (max-width: 1023px) and (min-width: 992px) {
+  #privacy .privacy-content {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 991px) {
+  #privacy .privacy-content {
+    max-width: 600px;
+    margin: -110px auto 0;
+  }
+}
+
+#privacy .privacy-content .content-title {
+  font-size: 30px;
+  font-family: "Tiempos Headline Web";
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+}
+@media (max-width: 767px) {
+  #privacy .privacy-content {
+    margin: 0 auto;
+    padding: 0;
+  }
+  #privacy .privacy-content .content-title {
+    font-size:25px;
+  }
+}
+#privacy .privacy-content .content h2 {
+  margin: 30px 0;
+  text-align: center;
+  font-size: 18px;
+}
+#privacy .privacy-content  p {
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+#privacy .privacy-content .content p strong {
+  font-weight: bold;
+}
+
+#privacy .privacy-content u{
+  font-weight:bold;
+  font-size: 17px;
+}
+#privacy .privacy-content  p .blue {
+  color:blue;
+  text-decoration:underline;
+}
+#privacy .privacy-content  p .orange {
+  color:#FF6600;
+}
+#privacy .privacy-content .sm{
+  font-size:15px;
+  line-height:20px;
+}
+
+#privacy .privacy-content .sm .mail-add{
+  padding-left:30px;
+}

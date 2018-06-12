@@ -1,0 +1,88 @@
+//urls 
+$Graphik-Regular: 'https://d3nbjfyscfbvsc.cloudfront.net/fonts/Into/Graphik/Graphik-Regular.ttf';
+
+
+//colors
+$color_black_haze_approx: #f7f7f7;
+
+@font-face {
+    font-family: 'Graphik Regular';
+    src: url($Graphik-Regular);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  height: 100%;
+  text-size-adjust: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+
+  body {
+    @extend html;
+    background: $color_black_haze_approx;
+    background-size: cover;
+    font-family: 'Graphik Regular',Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+
+    a {
+      color: #333;
+      cursor: pointer;
+      text-decoration: none;
+
+      &:active,
+      &:hover {
+        @extend a;
+      }
+    }
+
+    iframe {
+      border: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      padding: 0;
+      margin: 0;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .text-uppercase {
+      text-transform: uppercase;
+    }
+
+    .whiteback {
+      background: #fff;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    @media (max-width: 991px) {
+      .whiteback {
+        background: none;
+      }
+    }
+  }
+  @media(min-width: 992px) {
+    .into-container {
+      width: 975px;
+      margin: 0 auto;
+    }
+  }
+}

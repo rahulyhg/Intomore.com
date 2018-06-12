@@ -1,0 +1,83 @@
+@media (min-width: 992px) {
+  .search-result-list {
+    width: 975px;
+    margin: 20px auto 0; } }
+
+.search-result-list .gc {
+  display: block; }
+
+.search-result-list .gc-image {
+  background-color: lightgray;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 185px; }
+  @media (max-width: 991px) {
+    .search-result-list .gc-image {
+      height: 196px; } }
+
+.search-result-list .gc-detail {
+  padding: 5px 0 10px; }
+
+.search-result-list .article-right-ad {
+  width: 300px;
+  margin: 0 auto; }
+  @media (max-width: 767px) {
+    .search-result-list .article-right-ad {
+      display: none; } }
+
+.search-result-list .gc-detail-title {
+  font-family: "Tiempos Headline Web";
+  font-size: 16px;
+  line-height: 1.33;
+  font-weight: 500;
+  letter-spacing: 0.9px;
+  margin: 10px;
+  height: inherit;
+  text-align: center;
+  max-height: 104px;
+  overflow: hidden;
+  text-transform: capitalize; }
+
+@media (min-width: 992px) {
+  .search-result-list .gc-detail-title {
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: left;
+    max-height: 74px; } }
+
+.result-search-again .search-again-box {
+  margin: 20px 0 30px;
+  position: relative; }
+  .result-search-again .search-again-box .search-close {
+    position: absolute;
+    right: 10px;
+    top: 12px; }
+    .result-search-again .search-again-box .search-close img {
+      width: 18px; }
+  .result-search-again .search-again-box input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    height: 55px;
+    line-height: 55px;
+    font-size: 16px;
+    padding-left: 40px !important;
+    background-image: url(../../../assets/imgs/search.svg);
+    background-size: 20px;
+    background-position: 10px;
+    background-repeat: no-repeat; }
+    .result-search-again .search-again-box input:focus {
+      outline: none; }
+  .result-search-again .search-again-box .cancel {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    cursor: pointer; }
+
+@media (max-width: 991px) {
+  .search-result-list .gc {
+    max-width: 468px;
+    margin: auto auto 13px; } }

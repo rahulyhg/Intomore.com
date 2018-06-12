@@ -1,0 +1,90 @@
+.subscription-form {
+  $white: #fff;
+  $black_10: rgba(0, 0, 0, 0.1);
+  $black: #000;
+  $color_shocking_pink_approx: #ff00b7;
+  $color_star_dust_approx: #9b9b9b;
+  $color_celeste_approx: #ccc;
+  $color_royal_blue_approx: #4285f4;
+  //fonts
+  $font_0: Arial;
+  $font_1: Helvetica;
+  $font_2: sans-serif;
+  $font_3: Tiempos Headline Web;
+  $font_4: Tiempos Text Web;
+  form {
+    > * {
+      display: inline-block;
+    }
+  }
+  p {
+    display: none;
+  }
+  .grindr-sub {
+    position: relative;
+    input {
+      font-family: $font_4;
+      width: 100%;
+      display: block;
+      height: 33px;
+      border: none;
+      text-align: center;
+      padding: 10px;
+
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid $color_royal_blue_approx;
+        box-shadow: 0 1px 0 0 $color_royal_blue_approx;
+      }
+    }
+  }
+
+  button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 110px;
+    background: $black;
+    color: $white;
+    box-shadow: none;
+    border-radius: 0;
+    height: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 11px;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  
+  .submit-button {
+    background: $black;
+    color: $white;
+    text-transform: uppercase;
+    font-family: $font_0, $font_1, $font_2;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 10px 20px;
+  }
+  
+  .hidden_iframe {
+    display: none;
+  }
+}
+
+
+body.form-submitted {
+.subscription-form {
+  p {
+    display: block;
+    margin: 0 0 0 20px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  form {
+    display: none;
+  }
+}  
+}

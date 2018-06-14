@@ -4,7 +4,7 @@ import Close from '../../assets/imgs/close.png'
 import './assets/style.css'
 import Suggestions from '../Suggestions'
 
-const API_URL = 'https://cms.stage-intomore.com/wp-json/wp/v2/posts/?per_page=100&search='
+const API_URL = 'https://cms.intomore.com/wp-json/wp/v2/posts/?per_page=100&search='
 class Search extends Component {
     constructor(){
         super();

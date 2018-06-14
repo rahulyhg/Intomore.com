@@ -27,7 +27,7 @@ export class Article extends Component {
     this.articleSlug = this.props.location.pathname.split('/')[2]
     
     this.getPost = () => {
-      fetch('https://cms.stage-intomore.com/wp-json/wp/v2/posts/?slug=' + this.articleSlug + '')
+      fetch('https://cms.intomore.com/wp-json/wp/v2/posts/?slug=' + this.articleSlug + '')
       .then((response) => {
         if (response.ok) {
           return response.json()
@@ -55,7 +55,7 @@ export class Article extends Component {
         this.categoryNum = 'categories=6'
       }
       console.log(categorySlug)
-      fetch('https://cms.stage-intomore.com/wp-json/wp/v2/posts/?' + this.categoryNum + '')
+      fetch('https://cms.intomore.com/wp-json/wp/v2/posts/?' + this.categoryNum + '')
       .then((response) => {
         if (response.ok) {
           return response.json()
@@ -70,7 +70,7 @@ export class Article extends Component {
     getRelatedPosts()
 
     const getTrendingPosts = () => {
-      fetch('https://cms.stage-intomore.com/wp-json/wp/v2/posts/?page=2')
+      fetch('https://cms.intomore.com/wp-json/wp/v2/posts/?page=2')
       .then((response) => {
         if (response.ok) {
           return response.json()
@@ -249,9 +249,9 @@ export class Article extends Component {
       if (article)
         articleData = <div className='into-container-article'>
           <Helmet>
-            <title>{article.acf.seo_title}</title>
+            <title>{article.title.rendered}</title>
             <meta name='description' content={article.acf.seo_description}/>
-            <meta property='og:title' content={article.acf.seo_title} />
+            <meta property='og:title' content={article.title.rendered} />
             <meta property='og:description' content={article.acf.seo_description} />
             <meta property='og:url' content={window.location.href} />
             <meta property='og:image' content={article.acf.wide_crop} />

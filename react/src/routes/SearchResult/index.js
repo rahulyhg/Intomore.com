@@ -4,7 +4,7 @@ import Close from '../../assets/imgs/close.png'
 import './assets/style.css'
 import SuggestionsAll from '../../components/SuggestionsAll'
 
-const API_URL = 'https://cms.stage-intomore.com/wp-json/wp/v2/posts/?per_page=100&search='
+const API_URL = 'https://cms.intomore.com/wp-json/wp/v2/posts/?per_page=100&search='
 
 export class SearchResultList extends Component {
     constructor() {

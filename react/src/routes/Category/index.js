@@ -103,7 +103,7 @@ export class Category extends Component {
         this.tagName = ''
       }
       
-      fetch('https://cms.stage-intomore.com/wp-json/wp/v2/posts/?per_page=20&page=' + this.pageNum + this.categoryNum + this.tagName + '')
+      fetch('https://cms.intomore.com/wp-json/wp/v2/posts/?per_page=20&page=' + this.pageNum + this.categoryNum + this.tagName + '')
       .then((response) => {
         if (response.ok) {
           return response.json()

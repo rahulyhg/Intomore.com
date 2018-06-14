@@ -65,7 +65,7 @@ export class Home extends Component {
       },2000)
 
     const getBanner = () => {
-      fetch('https://cms.stage-intomore.com/wp-json/wp/v2/posts/?tags=36&per_page=1')
+      fetch('https://cms.intomore.com/wp-json/wp/v2/posts/?tags=36&per_page=1')
       .then((response) => {
         if (response.ok) {
           return response.json()
@@ -80,7 +80,7 @@ export class Home extends Component {
     getBanner()
     
     const getPosts = () => {
-      fetch('https://cms.stage-intomore.com/wp-json/wp/v2/posts')
+      fetch('https://cms.intomore.com/wp-json/wp/v2/posts')
       .then((response) => {
         if (response.ok) {
           return response.json()
@@ -95,7 +95,7 @@ export class Home extends Component {
     getPosts()
     
     const getFeaturedPosts = () => {
-      fetch('https://cms.stage-intomore.com/wp-json/wp/v2/posts?tags=37')
+      fetch('https://cms.intomore.com/wp-json/wp/v2/posts?tags=37')
       .then((response) => {
         if (response.ok) {
           return response.json()
@@ -110,7 +110,7 @@ export class Home extends Component {
     getFeaturedPosts()
     
     const getTrendingPosts = () => {
-      fetch('https://cms.stage-intomore.com/wp-json/wp/v2/posts/?page=2')
+      fetch('https://cms.intomore.com/wp-json/wp/v2/posts/?page=2')
       .then((response) => {
         if (response.ok) {
           return response.json()
@@ -125,7 +125,7 @@ export class Home extends Component {
     getTrendingPosts()
     
     const getEditorsPickPosts = () => {
-      fetch('https://cms.stage-intomore.com/wp-json/wp/v2/posts?tags=38')
+      fetch('https://cms.intomore.com/wp-json/wp/v2/posts?tags=38')
       .then((response) => {
         if (response.ok) {
           return response.json()
@@ -140,7 +140,7 @@ export class Home extends Component {
     getEditorsPickPosts()
     
     const getTravelPosts = () => {
-      fetch('https://cms.stage-intomore.com/wp-json/wp/v2/posts?categories=3')
+      fetch('https://cms.intomore.com/wp-json/wp/v2/posts?categories=3')
       .then((response) => {
         if (response.ok) {
           return response.json()
@@ -155,7 +155,7 @@ export class Home extends Component {
     getTravelPosts()
     
     const getYouPosts = () => {
-      fetch('https://cms.stage-intomore.com/wp-json/wp/v2/posts?categories=5')
+      fetch('https://cms.intomore.com/wp-json/wp/v2/posts?categories=5')
       .then((response) => {
         if (response.ok) {
           return response.json()
@@ -170,7 +170,7 @@ export class Home extends Component {
     getYouPosts()
     
     const getImpactPosts = () => {
-      fetch('https://cms.stage-intomore.com/wp-json/wp/v2/posts?categories=6')
+      fetch('https://cms.intomore.com/wp-json/wp/v2/posts?categories=6')
       .then((response) => {
         if (response.ok) {
           return response.json()
@@ -185,7 +185,7 @@ export class Home extends Component {
     getImpactPosts()
     
     const getCulturePosts = () => {
-      fetch('https://cms.stage-intomore.com/wp-json/wp/v2/posts?categories=4')
+      fetch('https://cms.intomore.com/wp-json/wp/v2/posts?categories=4')
       .then((response) => {
         if (response.ok) {
           return response.json()
@@ -200,7 +200,7 @@ export class Home extends Component {
     getCulturePosts()
     
     const getVideoPosts = () => {
-      fetch('https://cms.stage-intomore.com/wp-json/wp/v2/posts?categories=54&per_page=1')
+      fetch('https://cms.intomore.com/wp-json/wp/v2/posts?categories=54&per_page=1')
       .then((response) => {
         if (response.ok) {
           return response.json()

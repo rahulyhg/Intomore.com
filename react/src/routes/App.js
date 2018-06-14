@@ -30,15 +30,17 @@ class App extends Component {
         <Route exact={true} path='/you' component={Category}/>
         <Route exact={true} path='/impact' component={Category}/>
           
-        /* This converts and redirects any uppercase urls to lowercase */
+        {/* This converts and redirects any uppercase urls to lowercase */}
         <Route sensitive path="/:slug1*:slug2([A-Z]):slug3*/" render={props => <Redirect to={`${props.location.pathname.toLowerCase()}`}/>}/>
+        
+        {/* Redirect all /into categories to /culture */}
+        <Route sensitive path="/into/:slug1*" render={props => <Redirect to={`${props.location.pathname.replace('/into/', '/culture/')}`}/>}/>
 
-        <Route exact={true} path='/videos/:articleUrl*' component={Article}/>
-        <Route exact={true} path='/travel/:articleUrl*' component={Article}/>
-        <Route exact={true} path='/culture/:articleUrl*' component={Article}/>
-        <Route exact={true} path='/you/:articleUrl*' component={Article}/>
-        <Route exact={true} path='/impact/:articleUrl*' component={Article}/>
-
+        <Route exact={true} path='/videos/:slug1*' component={Article}/>
+        <Route exact={true} path='/travel/:slug1*' component={Article}/>
+        <Route exact={true} path='/you/:slug1*' component={Article}/>
+        <Route exact={true} path='/impact/:slug1*' component={Article}/>
+        <Route exact={true} path='/culture/:slug1*' component={Article}/>
         <Route exact={true} path='/About' component={About}/>
         <Route exact={true} path='/Advertise' component={Advertise}/>
         <Route exact={true} path='/SearchResult' component={SearchResult}/>
